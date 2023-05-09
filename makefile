@@ -1,8 +1,9 @@
-compile: main.c 
-	 gcc main.c -o ming
+DEPS= Job
+compile: main.cpp 
+	 g++ main.cpp -o $(DEPS)
 
-run: ming
-	 ./ming
+run: $(DEPS)
+	 ./$(DEPS)
 
-clean: ming
-	 rm ming
+clean: $(DEPS)
+	 rm $(DEPS)
